@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">You\'re unplugged</string>
+    <string name="menu_about_us">About us</string>
+    <string name="menu_restore_default">About us</string>
+    <string name="company_about_us">Made by zode64</string>
+    <string name="email_about_us">Email me john@zode64.com</string>
+    <string name="twitter_about_us">Follow us on twitter at @zode64</string>
+    <string name="website_about_us">http://www.zode64.com</string>
+    <string name="slider_turn_on">On</string>
+    <string name="slider_turn_off">Off</string>
+    <string name="button_select_warning">Select Sound</string>
+    <string name="button_stop_warning">Stop Sound</string>
+    <string name="restore_default">Restore original sound</string>
+    <string name="problem_warning_file">There\'s a problem with warning file you selected</string>
+    <string name="button_warning_volume">Warning volume</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <com.zode64.youreunplugged.SlideSwitch
+        android:id="@+id/on_off_switch"
+        style="@style/slide_style"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/switch_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/on_off_switch"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/on_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:text="@string/slider_turn_on"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/off_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/on_text"
+            android:paddingLeft="25dp"
+            android:text="@string/slider_turn_off"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/switch_labels"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" >
+
+        <Button
+            android:id="@+id/select_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_select_warning" >
+        </Button>
+
+        <Button
+            android:id="@+id/stop_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/select_warning"
+            android:text="@string/button_stop_warning" >
+        </Button>
+
+        <Button
+            android:id="@+id/warning_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/stop_warning"
+            android:text="@string/button_warning_volume" >
+        </Button>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/warning_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_container"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/padlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_container"
+        android:layout_alignParentRight="true"
+        android:baselineAligned="false" >
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+        </View>
+
+        <ImageView
+            android:id="@+id/padlock_image"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/padlock_jack" >
+        </ImageView>
+    </LinearLayout>
+
+</RelativeLayout>
