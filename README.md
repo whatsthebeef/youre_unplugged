@@ -1,4 +1,4 @@
-youreunplugged-
+You're unplugged
 ===============
 
-Android app which assists the device owner in keeping hold of their phone 
+Android app which assists the device owner in keeping hold of their device.
